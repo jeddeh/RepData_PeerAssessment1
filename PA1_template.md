@@ -30,7 +30,7 @@ interval$interval <- strptime(interval$interval, "%H%M")
 ## What is mean total number of steps taken per day?
 
 ```r
-hist(daily$steps, main = "Steps Taken Per Day", xlab = "Steps", ylab = "Days")
+hist(daily$steps, main = "Steps Taken Per Day", xlab = "Steps", ylab = "Frequency")
 ```
 
 ![plot of chunk meansteps](figure/meansteps-1.png) 
@@ -78,7 +78,7 @@ lapply(which(is.na(imputed$steps)), function(index) {
 dailyimputed <- aggregate(imputed$steps, by = list(imputed$date), sum)
 names(dailyimputed) <- c("date", "steps")
 
-hist(dailyimputed$steps, main = "Steps Taken Per Day", xlab = "Steps", ylab = "Days", sub = "Imputed values based on mean of corresponding 5 minute interval.")
+hist(dailyimputed$steps, main = "Steps Taken Per Day", xlab = "Steps", ylab = "Frequency", sub = "Imputed values based on mean of corresponding 5 minute interval.")
 ```
 
 ![plot of chunk impute](figure/impute-1.png) 
