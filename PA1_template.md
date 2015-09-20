@@ -46,7 +46,7 @@ The mean of the total number of steps taken per day is 10766.19 and the median i
 ## What is the average daily activity pattern?
 
 ```r
-plot(x = interval$interval, y = interval$steps, type = "l", main = "Averaage Daily Activity", xlab = "Time", ylab = "Average Steps")
+plot(x = interval$interval, y = interval$steps, type = "l", main = "Average Daily Activity", xlab = "Time", ylab = "Average Steps")
 ```
 
 ![plot of chunk dailyactivity](figure/dailyactivity-1.png) 

@@ -42,7 +42,7 @@ The mean of the total number of steps taken per day is `r meansteps` and the med
 
 ## What is the average daily activity pattern?
 ```{r dailyactivity}
-plot(x = interval$interval, y = interval$steps, type = "l", main = "Averaage Daily Activity", xlab = "Time", ylab = "Average Steps")
+plot(x = interval$interval, y = interval$steps, type = "l", main = "Average Daily Activity", xlab = "Time", ylab = "Average Steps")
 
 maxsteps <- which.max(interval$steps)
 maxinterval <- format(interval$interval[maxsteps], "%H:%M:%S")
